@@ -96,7 +96,7 @@ class FileManager:
         except PermissionError:
             raise FileCorrupted(f"Неможливо дописати у файл '{self.path}': недостатньо прав!")
         except Exception:
-            raise FileCorrupted("Не вдалося дописати у файл!")
+            raise FileCorrupted("Не вдалося дописати у файл данні!")
 
 
 def main():
